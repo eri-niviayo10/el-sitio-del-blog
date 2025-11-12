@@ -1,0 +1,26 @@
+.img{
+    width: 80px;
+    height: 80px;
+}
+
+.info{
+    display: flex;
+    font-size: 30px;
+    text-align: center;
+}
+
+.fecha{
+    font-size: 30px;
+    align-content: center;
+}
+
+#pie{
+    font-size:50px;
+    text-align: center;
+}
+
+
+#slogan{
+    font-size:50px;
+    text-align: center;
+}
