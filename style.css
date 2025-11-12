@@ -24,3 +24,9 @@
     font-size:50px;
     text-align: center;
 }
+
+.redes{
+    text-align: center;
+    display: flex;
+    padding-right: 30px;
+}
