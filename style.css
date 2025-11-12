@@ -1,205 +1,228 @@
+/* ====== ESTILO GENERAL ====== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 body {
-    background-color: #f0f7f9; 
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin: 0;
-    color: #333; 
-    padding-top: 60px; 
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  background-color: #fefcfb;
+  color: #333;
+  line-height: 1.6;
 }
 
-header {
-    position: fixed;
-    top: 0; 
-    width: 100%; 
-    z-index: 1000; 
-    
-    background-color: #2b7a97; 
-    padding: 10px 0;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-}
-
-.main-nav ul {
-    list-style: none; 
-    padding: 0;
-    margin: 0;
-    display: flex; 
-    justify-content: center;
-}
-
-.main-nav li a {
-    display: block;
-    color: white; 
-    text-decoration: none; 
-    font-weight: bold;
-    padding: 10px 20px;
-}
-
-.main-nav li a:hover {
-    background-color: #1b5e73; 
-}
-
-
+/* ====== CONTENIDO PRINCIPAL ====== */
 main {
-    padding: 20px;
-    max-width: 900px; 
-    margin: 20px auto; 
-    background-color: white;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.08);
-    
-    min-height: 800px; 
+  max-width: 900px;
+  margin: 60px auto;
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
 }
 
-h1 {
-    color: #008080; 
+/* ====== SECCIONES ====== */
+section {
+  background-color: #fff;
+  border-left: 8px solid #ff8c42;
+  border-radius: 10px;
+  padding: 25px;
+  margin-bottom: 40px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* ---- ESTILOS GENERALES ---- */
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-    }
-
-    /* ---- NAVBAR ---- */
-    nav {
-      background-color: #333;
-      color: white;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 10px 20px;
-    }
-
-    nav .logo {
-      font-size: 1.5em;
-      font-weight: bold;
-    }
-
-    nav ul {
-      list-style: none;
-      margin: 0;
-      padding: 0;
-      display: flex;
-    }
-
-    nav ul li {
-      margin-left: 20px;
-    }
-
-    nav ul li a {
-      text-decoration: none;
-      color: white;
-      transition: color 0.3s;
-    }
-
-    nav ul li a:hover {
-      color: #00bfff;
-    }
-
-    /* ---- MENU RESPONSIVE (Hamburguesa) ---- */
-    .menu-toggle {
-      display: none;
-      flex-direction: column;
-      cursor: pointer;
-    }
-
-    .menu-toggle div {
-      width: 25px;
-      height: 3px;
-      background: white;
-      margin: 4px 0;
-    }
-
-    @media (max-width: 768px) {
-      nav ul {
-        display: none;
-        flex-direction: column;
-        width: 100%;
-        background: #333;
-      }
-
-      nav ul.show {
-        display: flex;
-      }
-
-      .menu-toggle {
-        display: flex;
-      }
-    };
-
-.img{
-    width: 80px;
-    height: 80px;
+section:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 10px rgba(255, 140, 66, 0.2);
 }
 
-.info{
-    display: flex;
-    font-size: 30px;
+h2 {
+  color: #ff8c42;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+p {
+  color: #555;
+  font-size: 1.1em;
+  text-align: center;
+}
+nav {
+  background-color: #5bc0be; /* Turquesa principal */
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 30px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+nav .logo {
+  font-size: 1.6em;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #fff;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  font-size: 1em;
+  transition: all 0.3s ease;
+  padding: 8px 15px;
+  border-radius: 8px;
+}
+
+nav ul li a:hover {
+  background-color: #ff8c42; /* Naranja suave */
+  color: #fff;
+}
+
+/* ====== MENU RESPONSIVE (Hamburguesa) ====== */
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.menu-toggle div {
+  width: 25px;
+  height: 3px;
+  background: white;
+  margin: 4px 0;
+  border-radius: 2px;
+}
+
+@media (max-width: 768px) {
+  nav ul {
+    display: none;
+    flex-direction: column;
+    background-color: #5bc0be;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 100%;
     text-align: center;
-}
+    padding: 10px 0;
+  }
 
-.fecha{
-    font-size: 30px;
-    align-content: center;
-}
-
-#pie{
-    font-size:50px;
-    text-align: center;
-}
-
-
-.content-section {
+  nav ul.show {
     display: flex;
-    gap: 20px;
-    margin-top: 30px;
-    align-items: flex-start;
-}
+  }
 
-.text-content {
-    flex: 2; 
-}
-
-.image-placeholder {
-    flex: 1; 
-    background-color: #ccc;
-    height: 200px;
+  .menu-toggle {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #666;
-    font-style: italic;
-    border: 1px dashed #666;
+  }
+
+  nav ul li a {
+    display: block;
+    padding: 12px;
+  }
 }
-
-
+/* ====== FOOTER ====== */
 footer {
-    background-color: #333; 
-    color: white;
-    padding: 15px;
-    text-align: center;
-    margin-top: 30px;
-    border-top: 5px solid #008080;
+  background-color: #5bc0be;
+  color: white;
+  padding: 40px 20px;
+  border-radius: 15px;
+  text-align: center;
+  margin-top: 60px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.1);
 }
 
-footer ul {
-    list-style: none;
-    padding: 0;
-    margin: 5px 0;
-    font-size: 0.9em;
+#pie {
+  font-size: 2em;
+  font-weight: 700;
+  letter-spacing: 2px;
 }
 
-footer a {
-    color: #8cafff;
-    text-decoration: none;
-}
-#slogan{
-    font-size:50px;
-    text-align: center;
+#slogan {
+  font-size: 1.2em;
+  font-style: italic;
+  color: #fff7e6;
+  margin-bottom: 25px;
 }
 
-.redes{
+/* ====== CONTENEDOR DE INFO ====== */
+.info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+.autores, .redes {
+  flex: 1 1 300px;
+}
+
+.autores ul {
+  list-style: none;
+  padding: 0;
+  font-size: 0.95em;
+  line-height: 1.8;
+}
+
+/* ====== REDES SOCIALES ====== */
+.redes p {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  transition: transform 0.2s ease;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.img:hover {
+  transform: scale(1.15);
+}
+
+/* ====== FECHA ====== */
+.fecha {
+  font-size: 0.9em;
+  color: #fff7e6;
+  opacity: 0.9;
+  margin-top: 10px;
+}
+
+/* ====== RESPONSIVE ====== */
+@media (max-width: 768px) {
+  main {
+    padding: 20px;
+  }
+
+  section {
+    padding: 20px;
+  }
+
+  .info {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .autores, .redes {
+    width: 100%;
     text-align: center;
-    display: flex;
-    padding-right: 30px;
+  }
 }
