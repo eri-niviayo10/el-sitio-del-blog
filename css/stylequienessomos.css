@@ -1,18 +1,129 @@
+/* ======== ESTILO GENERAL ======== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 body {
-    background-color: #f0f0f0;
-    font-family: Arial, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+/* Centra y limita el contenido principal */
+main {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+/* ======== SECCIONES PRINCIPALES ======== */
+section {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  margin-bottom: 40px;
+  text-align: center;
 }
 
 h2 {
-    color: #444;
-    text-align: center;
+  color: #444;
+  margin-bottom: 15px;
+  font-size: 1.8em;
+  text-transform: capitalize;
 }
 
-section {
-    background: white;
-    border-radius: 8px;
-    margin: 20px auto;
+p {
+  font-size: 1.05em;
+  color: #555;
+}
+
+/* ======== FOOTER ======== */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 40px 20px;
+  border-radius: 12px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  margin-top: 40px;
+}
+
+/* Títulos del footer */
+#pie {
+  text-align: center;
+  font-size: 1.6em;
+  letter-spacing: 1px;
+}
+
+#slogan {
+  text-align: center;
+  font-weight: normal;
+  font-style: italic;
+  color: #ccc;
+  margin-bottom: 25px;
+}
+
+/* ======== CONTENEDOR DE INFO ======== */
+.info {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-bottom: 25px;
+}
+
+.autores,
+.redes {
+  flex: 1 1 300px;
+  text-align: center;
+}
+
+/* Lista de autores */
+.autores ul {
+  list-style: none;
+  margin: 5px 0;
+}
+
+/* Imágenes de redes sociales */
+.img {
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  margin: 5px;
+  transition: transform 0.2s ease;
+}
+
+.img:hover {
+  transform: scale(1.1);
+}
+
+/* Texto de actualización */
+.fecha {
+  text-align: center;
+  font-size: 0.9em;
+  color: #ccc;
+  margin-top: 15px;
+}
+
+/* ======== RESPONSIVE ======== */
+@media (max-width: 768px) {
+  main {
+    padding: 20px 10px;
+  }
+
+  section {
     padding: 20px;
-    max-width: 800px;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  }
+
+  .info {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .autores, .redes {
+    width: 100%;
+  }
 }
