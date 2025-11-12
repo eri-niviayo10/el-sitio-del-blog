@@ -1,3 +1,4 @@
+
 /* ---- ESTILOS GENERALES ---- */
     body {
       font-family: Arial, sans-serif;
@@ -70,4 +71,38 @@
       .menu-toggle {
         display: flex;
       }
-    }
+    };
+
+.img{
+    width: 80px;
+    height: 80px;
+}
+
+.info{
+    display: flex;
+    font-size: 30px;
+    text-align: center;
+}
+
+.fecha{
+    font-size: 30px;
+    align-content: center;
+}
+
+#pie{
+    font-size:50px;
+    text-align: center;
+}
+
+
+#slogan{
+    font-size:50px;
+    text-align: center;
+}
+
+.redes{
+    text-align: center;
+    display: flex;
+    padding-right: 30px;
+}
+
